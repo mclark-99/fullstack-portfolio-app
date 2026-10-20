@@ -31,24 +31,47 @@ Docker compose manages the services and provides internal networking between con
 
 ## Running the Application
 [![Watch Demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/RwlQMWQInWk)
+
 **Prerequisites:** Docker and Docker Compose.
 Clone the repository:
 ```bash
 git clone https://github.com/mclark-99/fullstack-portfolio-app.git
 ```
 
+cd into project folder
+```bash
+cd fullstack-portfolio-app
+ls
+```
+
+Run the setup script:
+```bash
+bash scripts/setup-cloudlab.sh
+```
+
 Build and start the containers:
 ```bash
-docker compose up --build
+sudo docker compose up --build
+```
+
+Verify the services in a new CloudLab terminal:
+```bash
+curl localhost:8000/api
+curl localhost:3000
+```
+
+Find Cloudlab Hostname
+```bash
+hostname -f
+```
+
+Run in a new terminal (locally, not on CloudLab)
+```bash
+ssh -L 3000:localhost:3000 <your-username>@<your-cloudlab-hostname>
 ```
 
 Open the application:
 http://localhost:3000
-
-Test the backend API:
-```bash
-curl http://localhost:8000/api
-```
 
 ## Technical Implementation
 # Frontend Development
