@@ -17,16 +17,22 @@ The project demonstrates frontend/backend integrations, REST API communication, 
 - REST API providing structured JSON responses.
 - Separate frontend and backend Docker containers.
 - Nginx reverse proxy for routing API requests.
-- Nginx reverse proxy for routing API requests.
 
 ## Application Architecture
 The application consists of two independent services:
+
 **Frontend -- Nginx + JavaScript**
+
 Serves the portfolio website and retrieves data from the backend using HTTP requests.
+
 **Backend -- Python + Flask**
+
 Exposes a REST API that returns structured JSON data for the frontend to display.
+
 **Request Flow**
+
 Browser -> Nginx Frontend -> Flask REST API -> JSON Response -> Dynamic Page Rendering
+
 Docker compose manages the services and provides internal networking between containers.
 
 ## Running the Application
@@ -74,16 +80,16 @@ Open the application:
 http://localhost:3000
 
 ## Technical Implementation
-# Frontend Development
+### Frontend Development
 Built the user interface using HTML and CSS, with JavaScript responsible for retrieving and rendering data returned by the backend.
 
-# Backend Development
+### Backend Development
 Implemented a Flask API to provide structured data through HTTP requests.
 
-# Containerization
+### Containerization
 Created separate Dockerfiles for the frontend and backend and used Docker Compose to coordinate service startup and networking.
 
-# Reverse Proxy
+### Reverse Proxy
 Configured Nginx to serve static frontend assets and forward API requests to the Flask backend using Docker service-name resolution.
 
 
@@ -94,6 +100,8 @@ Configured Nginx to serve static frontend assets and forward API requests to the
 - Deploy the application to a publicly accessible hosting environment.
 
 ## Author
-Maiti F. Clark
+**Maiti F. Clark**
+
 M.S. Computer Science -- West Chester University
+
 Expected Graduation: December 2026
