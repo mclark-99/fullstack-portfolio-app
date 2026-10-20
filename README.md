@@ -37,7 +37,7 @@ Docker compose manages the services and provides internal networking between con
 
 ## Application Preview
 
-![Portfolio Application Screenshot](portfolio screenshot.png)
+![Portfolio Application Screenshot](portfolio-screenshot.png)
 
 ## Running the Application
 
