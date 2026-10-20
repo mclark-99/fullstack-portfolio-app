@@ -34,7 +34,7 @@ Docker compose manages the services and provides internal networking between con
 **Prerequisites:** Docker and Docker Compose.
 Clone the repository:
 ```bash
-git clone https://github.com/mclark-99/csc581_project1.git
+git clone https://github.com/mclark-99/fullstack-portfolio-app.git
 ```
 
 Build and start the containers:
