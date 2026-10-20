@@ -117,7 +117,7 @@ This allows the frontend to communicate with the backend without directyly expos
 ## Repository Structure
 
 ```
-csc581_project1/
+fullstack-portfolio-app/
 |
 |-- component1/         # Backend API
 |  |-- Dockerfile
@@ -166,11 +166,11 @@ This repository includes a two-container setup that can be launched on a CloudLa
 1. Launch an Ubuntu-based CloudLab node.
 2. Clone this repository.
 ```bash
-git clone https://github.com/mclark-99/csc581_project1.git
+git clone https://github.com/mclark-99/fullstack-portfolio-app.git
 ```
 3. cd into project folder
 ```bash
-cd csc581_project1
+cd fullstack-portfolio-app
 ls
 ```
 
