@@ -30,8 +30,9 @@ Serves the portfolio website and retrieves data from the backend using HTTP requ
 Exposes a REST API that returns structured JSON data for the frontend to display.
 
 **Request Flow**
-
+```bash
 Browser -> Nginx Frontend -> Flask REST API -> JSON Response -> Dynamic Page Rendering
+```
 
 Docker compose manages the services and provides internal networking between containers.
 
